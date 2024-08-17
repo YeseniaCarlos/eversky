@@ -163,10 +163,13 @@ a:focus {
 /*end header section*/
 /* slider section */
 .slider_section {
+  overflow: hidden;
+  z-index: 1;
   background-image: url(../images/hero.jpg);
-  padding: 6% 0;
+  padding: 8% 0;
   background-size: cover;
   background-repeat: no-repeat;
+  position: relative;
 }
 
 .slider_section .row {
@@ -224,7 +227,7 @@ a:focus {
 }
 
 .slider_img-box img {
-  width: 100%;
+  width: 70%;
 }
 
 .carousel-indicators {
@@ -519,8 +522,8 @@ a:focus {
 }
 
 .info_items .item .img-box {
-  width: 80px;
-  height: 80px;
+  width: 40px;
+  height: 40px;
   border-radius: 100%;
   background-repeat: no-repeat;
   background-position: center;
@@ -567,6 +570,16 @@ a:focus {
 .footer_section a {
   color: #292929;
 }
+
+.custom-container {
+  margin-top: 370px; /* Ajusta el margen superior para separar del carrusel */
+  padding: 0px 0; /* Espacio interno en la parte superior e inferior */
+  position: relative;
+  z-index: 1; /* Asegura que esté encima del carrusel */
+  height: auto; /* Deja que la altura se ajuste al contenido */
+  background-color: #ffffff; /* Color de fondo opcional para visibilidad */
+}
+
 
 /* end footer section*/
 /*# sourceMappingURL=style.css.map */
